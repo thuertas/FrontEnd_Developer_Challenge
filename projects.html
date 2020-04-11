@@ -1,0 +1,348 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Home - Prepr Network</title>
+    <link rel="icon" type="icon" href="images/Tatiana_Huertas_FrontEnd_Developer_icon.png"/><!--Created this Icon using the prepr logo as base-->
+    <link href="https://fonts.googleapis.com/css?family=Alatsi|Oswald:400,500&display=swap" rel="stylesheet"><!--Google Fonts-->
+    <link rel="stylesheet" href="css/app.css"><!--Zurb Foundation css-->
+    <link rel="stylesheet" href="css/Tatiana_Huertas_FrontEnd_Developer_main.css">
+</head>
+<body>
+    <!--HEADER-->
+    <!-- Header for small screens-->
+    <header class="data-sticky-container index hide-for-large hide-for-xlarge">
+        <div class="sticky is-anchored" data-sticky data-margin-top="0" data-sticky-on="small">
+            <div class="callout primary title-bar" data-responsive-toggle="mainNavigation" data-hide-for="medium">
+                <div class="title-bar-left">
+                    <button class="burger-icon" type="button" data-toggle="mainNavigation">
+                        <img class="burgerBtn" src="images/Tatiana_Huertas_FrontEnd_Developer_Burger.png" alt="menu button for mobile devices">
+                        <img class="closeBtn hide" src="images/Tatiana_Huertas_FrontEnd_Developer_closeBtn.png" alt="close menu button for small devices">
+                    </button>
+                </div>
+                <div class="title-bar-center">
+                    <a href="index.html"><img class="padding-right-1 padding-left-1" src="images/logo.png" alt=""></a>
+                </div>
+                <div class="title-bar-right text-right" data-responsive-toggle="userNavigation" data-hide-for="medium">
+                    <button type="button" data-toggle="userNavigation">
+                        <img class="nav-bar-icons user-icon" src="images/default-user.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <!--The following is the menu that will be displayed when the burger icon is clicked-->
+            <div class="top-bar hide-for-large top-bar-menu" data-responsive-toggle="mainNavigation" data-hide-for="large" id="mainNavigation">
+                <div class="top-bar-left">
+                    <ul class="menu vertical align-center">
+                        <li><a >resources</a></li>
+                        <li><a >news Feed</a></li>
+                        <li><a >organization</a></li>
+                        <li><a >help</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--The following is the menu that will be displayed when the user icon is clicked-->
+            <div class="top-bar hide-for-large top-bar-menu" data-responsive-toggle="userNavigation" data-hide-for="large" id="userNavigation">
+                <div class="top-bar-left">
+                    <ul class="menu vertical align-center">
+                        <li>
+                            <a href="projects.html" class="submenu-a">
+                                <img src="images/menu_icons/my_projects.png" alt="My projects icon">
+                                Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a class="submenu-a" href="labs.html">
+                                <img src="images/menu_icons/labs.png" alt="my labs icon">
+                                Labs
+                            </a>
+                        </li>
+                        <li>
+                            <a class="submenu-a" href="challenges.html">
+                                <img src="images/menu_icons/challenges_icn.png" alt="My challenges icon">
+                                Challenges
+                            </a>
+                        </li>
+                        <li>
+                            <a class="submenu-a">
+                                <img src="images/menu_icons/achievements_icn.png" alt="My achivements icon">
+                                Achivements
+                            </a>
+                        </li>
+                        <li>
+                            <a class="submenu-a">
+                                <img src="images/menu_icons/inbox.png" alt="My inbox icon">
+                                Inbox
+                            </a>
+                        </li>
+                        <li>
+                            <a class="submenu-a">
+                                <img src="images/menu_icons/settings.png" alt="Settings icon">
+                                Settings
+                            </a>
+                        </li>
+                        <li>
+                            <a class="submenu-a">
+                                <img src="images/menu_icons/logout.png" alt="Log out icon">
+                                Log out
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END of header for small screens-->
+
+    <!--Header for Medium and Large screens-->
+    <header class="nav-block data-sticky-container index hide-for-small-only hide-for-medium-only">
+        <div class="sticky is-at-top is-stuck" data-sticky data-margin-top="0" data-sticky-on="small">
+            <div class="is-stuck top-bar nav-block hide-for-small-only hide-for-medium-only">
+                <div class="top-bar-left">
+                    <ul class="menu align-left">
+                        <li class="align-self-middle">
+                            <a href="index.html">
+                                <img class="logo" src="images/logo.png" alt="">
+                            </a>
+                        </li>
+                        <li class="align-self-middle"><a >resources</a></li>
+                        <li class="align-self-middle"><a >news Feed</a></li>
+                        <li class="align-self-middle"><a >organization</a></li>
+                        <li class="align-self-middle"><a >help</a></li>
+                    </ul>
+                </div>
+                <div class="top-bar-right">
+                    <ul class="menu dropdown" data-dropdown-menu data-close-on-click="true" data-click-open="true">
+                        <li class="align-self-middle"><a ><img class="nav-bar-icons" src="images/search_icon.png" alt="Search button"></a></li>
+                        <li class="align-self-middle"><a ><img class="nav-bar-icons" src="images/notifications.png" alt="Notifications alert"></a></li>
+                        <li class="align-self-middle has-dropdown"><a ><img class="nav-bar-icons user-icon" src="images/default-user.png" alt=""></a>
+                            <ul class="menu">
+                                <li>
+                                    <a href="projects.html" class="submenu-a">
+                                        <img src="images/menu_icons/my_projects.png" alt="My projects icon">
+                                        Projects
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="submenu-a" href="labs.html">
+                                        <img src="images/menu_icons/labs.png" alt="my labs icon">
+                                        Labs
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="submenu-a" href="challenges.html">
+                                        <img src="images/menu_icons/challenges_icn.png" alt="My challenges icon">
+                                        Challenges
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="submenu-a">
+                                        <img src="images/menu_icons/achievements_icn.png" alt="My achivements icon">
+                                        Achivements
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="submenu-a">
+                                        <img src="images/menu_icons/inbox.png" alt="My inbox icon">
+                                        Inbox
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="submenu-a">
+                                        <img src="images/menu_icons/settings.png" alt="Settings icon">
+                                        Settings
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="submenu-a">
+                                        <img src="images/menu_icons/logout.png" alt="Log out icon">
+                                        Log out
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END OF HEADER-->
+
+    <!--Floating chat button-->
+    <div data-sticky-container class="clearfix hide-for-small-only">
+        <div class="sticky btn" data-sticky data-stick-to="bottom" data-anchor="card">
+            <img class="float-right" src="images/chat-button.png" alt="">
+        </div>
+    </div>
+
+    <!--BODY CONTENT-->
+    <div class="card" id="card">
+        <div class="content-column text-center">
+            <div class="row column text-center">
+                <h4>projects</h4>
+            </div>
+            <hr>
+            <div class="grid-x grid-margin-x align-right">
+                <div class="column small-6 medium-4 large-2 align-self-middle">
+                    <a>
+                        <img src="images/Tatiana_Huertas_FrontEnd_Developer_addicon.png" alt="add new project">
+                        New Project
+                    </a>
+                </div>
+                <div class="column small-6 medium-4 large-2 align-self-middle">
+                    <a class="edit-projects">
+                        <img src="images/Tatiana_Huertas_FrontEnd_Developer_setup.png" alt="Edit My projects">
+                        Edit
+                    </a>
+                </div>
+                </ul>
+            </div>
+
+            <!-- Tabs -->
+            <div class="row tabs">
+                <ul class="tabs text-center" data-tabs id="product-list">
+                    <li class="tabs-title is-active text-center">
+                        <a href="#panel1" aria-selected="true">
+                            <h6 class="no-margin">My Projects</h6>
+                        </a>
+                    </li>
+                    <li class="tabs-title text-center">
+                        <a href="#panel2">
+                            <h6 class="no-margin">Invited Projects</h6>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="hr-tabs">
+
+            <!-- My Projects list-->
+            <div class="tabs-content" data-tabs-content="product-list">
+                <div class="grid-container text-center tabs-panel is-active" id="panel1">
+                    <div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-4">
+                        <a class="cell">
+                            <div class="container">
+                                <img src="https://preprmedialive.s3.amazonaws.com/public/front/img/no-img.jpg" alt="No image available image">
+                                <img class="edit-btn hide" src="images/action_icons/Tatiana_Huertas_FrontEnd_Developer_editBtn.png" alt="Buttons to edit the projects">
+                            </div>
+                            <h4 class="dark">Title of the Project</h4>
+                        </a>
+
+                        <a class="cell">
+                            <div class="container">
+                                <img src="https://preprmedialive.s3.amazonaws.com/public/front/img/no-img.jpg" alt="No image available image">
+                                <img class="edit-btn hide" src="images/action_icons/Tatiana_Huertas_FrontEnd_Developer_editBtn.png" alt="Buttons to edit the projects">
+                            </div>
+                            <h4 class="dark">Title of the Project</h4>
+                        </a>
+
+                        <a class="cell">
+                            <div class="container">
+                                <img src="https://preprmedialive.s3.amazonaws.com/public/front/img/no-img.jpg" alt="No image available image">
+                                <img class="edit-btn hide" src="images/action_icons/Tatiana_Huertas_FrontEnd_Developer_editBtn.png" alt="Buttons to edit the projects">
+                            </div>
+                            <h4 class="dark">Title of the Project</h4>
+                        </a>
+
+                        <a class="cell">
+                            <div class="container">
+                                <img src="https://preprmedialive.s3.amazonaws.com/public/front/img/no-img.jpg" alt="No image available image">
+                                <img class="edit-btn hide" src="images/action_icons/Tatiana_Huertas_FrontEnd_Developer_editBtn.png" alt="Buttons to edit the projects">
+                            </div>
+                            <h4 class="dark">Title of the Project</h4>
+                        </a>
+
+                        <a class="cell">
+                            <div class="container">
+                                <img src="https://preprmedialive.s3.amazonaws.com/public/front/img/no-img.jpg" alt="No image available image">
+                                <img class="edit-btn hide" src="images/action_icons/Tatiana_Huertas_FrontEnd_Developer_editBtn.png" alt="Buttons to edit the projects">
+                            </div>
+                            <h4 class="dark">Title of the Project</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invited projects list-->
+            <div class="tabs-content" data-tabs-content="product-list">
+                <div class="grid-container text-center tabs-panel" id="panel2">
+                    <div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-4">
+                        <a class="cell">
+                            <div class="container">
+                                <img src="https://preprmedialive.s3.amazonaws.com/public/front/img/no-img.jpg" alt="No image available image">
+                                <img class="edit-btn hide" src="images/action_icons/Tatiana_Huertas_FrontEnd_Developer_editBtn.png" alt="Buttons to edit the projects">
+                            </div>
+                            <h4 class="dark">Title of the Project</h4>
+                        </a>
+
+                        <a class="cell">
+                            <div class="container">
+                                <img src="https://preprmedialive.s3.amazonaws.com/public/front/img/no-img.jpg" alt="No image available image">
+                                <img class="edit-btn hide" src="images/action_icons/Tatiana_Huertas_FrontEnd_Developer_editBtn.png" alt="Buttons to edit the projects">
+                            </div>
+                            <h4 class="dark">Title of the Project</h4>
+                        </a>
+
+                        <a class="cell">
+                            <div class="container">
+                                <img src="https://preprmedialive.s3.amazonaws.com/public/front/img/no-img.jpg" alt="No image available image">
+                                <img class="edit-btn hide" src="images/action_icons/Tatiana_Huertas_FrontEnd_Developer_editBtn.png" alt="Buttons to edit the projects">
+                            </div>
+                            <h4 class="dark">Title of the Project</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="row text-center prefooter">
+        <img src="images/Tatiana_Huertas_FrontEnd_Developer_icon.png" alt="">
+        <h1>unlock your infinite potencial</h1>
+    </div>
+    <footer class="grid-container fluid main-section">
+        <div class="large-12 medium-8 small-12 cell">
+            <div class="grid-x grid-padding-x">
+                <div class="large-3 medium-3 columns cell text-center align-self-middle">
+                    <img alt="Prepr logo" src="images/logo.png">
+                </div>
+                <div class="large-5 medium-5 columns cell title text-center medium-text-left">
+                        <ul>
+                            <li><a >resources</a></li>
+                            <li><a >news Feed</a></li>
+                            <li><a >organization</a></li>
+                            <li><a >help</a></li>
+                        </ul>
+                </div>
+                <div class="large-4 medium-4 columns cell align-self-middle text-center medium-text-left">
+                    <ul class="inline-list">
+                        <li><a href="https://www.facebook.com/preprfoundation/"><img src="images/Tatiana_Huertas_FrontEnd_Developer_facebook.png" alt="facebook icon"></a></li>
+                        <li><a href="https://www.instagram.com/preprme/"><img src="images/Tatiana_Huertas_FrontEnd_Developer_instagram.png" alt="Instagram icon"></a></li>
+                        <li><a href="https://www.linkedin.com/company/prepr-foundation/?originalSubdomain=ca"><img src="images/Tatiana_Huertas_FrontEnd_Developer_linkedin.png" alt="Linkedin icon"></a></li>
+                        <li><a href="https://twitter.com/preprme?lang=en"><img src="images/tatiana_Huertas_FrontEnd_Developer_twitter.png" alt="Twitter icon"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Terms of use and Privacy Policy-->
+    <div class="large-12 medium-12 columns post-footer">
+        <div class="grid-x grid-padding-x">
+            <div class="large-12 medium-12 columns cell text-center align-self-middle">
+                <ul class="inline-list">
+                    <li><a>Privacy Policy</a></li>
+                    <li>|</li>
+                    <li><a>Terms of Use</a></li>
+                </ul>
+                <p> developed by Tatiana Huertas</p>
+            </div>
+        </div>
+    </div>
+
+<script src="js/Tatiana_Huertas_script.js"></script>
+
+<!--The following scripts come with Foundation-->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

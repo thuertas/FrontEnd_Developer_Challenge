@@ -26,13 +26,43 @@ a {
     text-decoration: none;
 }
 
-footer a {
+a:hover {
     color: #B0DB88;
 }
 
-.hr-tabs {
-    width: 70%;
-    border-color: #52A966;
+a.show-more, strong {
+    color: #52A966;
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #B0DB88;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.title {
+    color: #52A966;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.challenge-date p, p.challenge-date {
+    margin-bottom: 0;
+}
+
+.dark {
+    text-transform: capitalize;
+    color: #414042;
+}
+
+.light {
+    color: #8b8b8b;
+}
+
+.no-margin {
+    margin: 0 !important; 
 }
 
 /*------------------- FEATURES ------------------------*/
@@ -44,15 +74,34 @@ button, .button {
     font-weight: 500;
 }
 
+header button, header .button, header button:hover, header .button:hover {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+
 button:hover, .button:hover {
     background-color: #52A966;
     border-radius: 10px;
     color: #FFFFFF;
 }
 
-.dark {
-    text-transform: capitalize;
-    color: #414042;
+.challenge.button {
+    margin: 0 5px;
+}
+
+.challenge.button:first-child {
+    margin-left: 25px;
+}
+
+.button.like {
+    background-color: transparent;
+    border: #B0DB88 solid 2px;
+}
+
+.button.like:hover {
+    background-color: #52A966;
+    border: #52A966 solid 2px;
 }
 
 /*inputs*/
@@ -68,6 +117,11 @@ input, select {
 
 .top-bar {
     border-bottom: #d8dcdf solid 1px;
+}
+
+header .top-bar-left a {
+    font-weight: 400;
+    font-size: 18px;
 }
 
 /*Dropndown menu*/
@@ -144,13 +198,13 @@ header .callout.primary {
 .card {
     background-color: #ffffff;
     margin: 15px;
-    padding: 10px;
+    padding: 20px 10px;
     border: none;
     border-radius: 10px;
 }
 
 hr {
-    border-bottom: #E0E7EF solid 1px;
+    border-bottom: #E0E7EF solid 2px;
     margin-top: 5px;
 }
 
@@ -164,6 +218,10 @@ body .orbit {
     width: 1rem;
     height: 1rem;
     margin: 0.5rem;
+}
+
+.orbit-bullets button.is-active {
+    background-color: #B0DB88;
 }
 
 .orbit-previous {
@@ -181,7 +239,7 @@ body .orbit {
 }
 
 .tabs-title a {
-    padding: 5px 90px;
+    padding: 10px 90px;
     border-radius: 10px;
 }
 
@@ -223,6 +281,42 @@ body .orbit {
     border: none;
 }
 
+.hr-tabs {
+    width: 70%;
+    border-color: #52A966;
+}
+
+.tabs-content .comment {
+    width: 65%;
+}
+
+.tabs-content .comment .media-object {
+    border-bottom: #E0E7EF solid 2px;
+    margin-bottom: 10px;
+}
+
+.tabs-content .comment .media-object:last-child {
+    border-bottom: none;
+    margin-bottom: 10px;
+}
+
+.tabs-content img.user-icon-submition {
+    width: 50px;
+}
+
+.tabs-content .cell.members-list {
+    border: none;
+}
+
+.tabs-content .cell.members-list img {
+    width: 100px;
+}
+
+.tabs-content .comment .media-object .user-icon {
+    width: 150px;
+    margin: 0 auto;
+}
+
 .callout .grid-container {
     margin: 0;
     padding-right: 0;
@@ -232,6 +326,78 @@ body .orbit {
 .pagination {
     border: #E0E7EF solid 1px;
     border-radius: 10px;
+    margin-top: 0;
+}
+
+.pagination .current, .pagination .current a {
+    background: #B0DB88;
+    color: #414042;
+}
+
+.pagination li, .pagination a {
+    border-radius: 10px;
+    padding: 0.5px 7px;
+}
+
+.pagination li:hover, .pagination li a:hover {
+    background-color: #52A966;
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.requirements {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.requirements ul {
+    list-style: none;
+}
+
+.challenge-date p img {
+    width: 20px;
+}
+
+.card .host-img {
+    width: 280px;
+}
+
+#card2 .media-object {
+    margin: 0 10%;
+}
+
+#card2 a {
+    color: #52A966;
+}
+
+#card2 a:hover {
+    color: #B0DB88;
+}
+
+#card2 {
+    padding-bottom: 25px;
+}
+
+.cell .lab-category {
+    border: 1px solid #b1b1b1;
+    padding: 3px 15px;
+    border-radius: 25px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+/*edit buttons (delete and move)*/
+.container {
+  position: relative;
+}
+
+.container .edit-btn {
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 /*------------------- FOOTER ------------------------*/
@@ -265,11 +431,16 @@ footer .cell {
 
 .post-footer {
     background-color: #AFB1AF;
+    font-size: 15px;
 }
 
 .post-footer ul {
     list-style: none;
     margin: 0;
+}
+
+.post-footer p {
+    margin-bottom: 5px;
 }
 
 .inline-list li, .post-footer ul li {
@@ -288,8 +459,65 @@ footer .cell {
     padding-bottom: 15px;
 }
 
+/*filters section*/
+.filters .tabs-title a {
+    padding: 5px 15px;
+    background-color: transparent;
+    border: #52A966 solid 1px;
+}
+
+.filters .tabs-title a:hover {
+    background-color: #52A966;
+}
+
+.filters .tabs-content a::selection {
+    background-color: #B0DB88;
+    border-color: #B0DB88;
+}
+
+.filters .tabs .two-lines li:last-child {
+    margin-top: 10px;
+}
+
 /*------------------- MEDIA QUERIES ------------------------*/
-/* Medium devices (i.e. tablets in landscape */
+/* Medium devices */
+@media (max-width: 900px) {
+
+    .tabs-content .comment .media-object img {
+        margin: 0 auto;
+    }
+
+    .tabs-title.explore a {
+        padding: 7px 60px;
+    }
+
+    .tabs-title a {
+        padding: 10px 50px;
+    }
+
+    .tabs-content .comment {
+        width: 80%;
+    }
+
+    .tabs-content .comment .media-object .user-icon {
+        width: 125px;
+        margin: 0 auto;
+    }
+
+    .tabs-content .cell.primary .action-icons li {
+        margin-right: 5px;
+    }
+
+    .tabs-content .cell.primary .small ul {
+        margin-left: 0;
+    }
+
+    #card2 .host-img {
+        width: 150px;
+    }
+}
+
+/* Small devices */
 @media (max-width: 600px) {
     .card {
         margin-left: 0;
@@ -298,17 +526,39 @@ footer .cell {
     }
 
     .tabs-title a {
-        padding: 7px 30px;
+        padding: 10px 15px;
     }
 
     .tabs-title.explore a {
         padding: 8px 25px;
     }
 
+    .tabs-content .comment {
+        width: 90%;
+    }
+
+    .tabs-content .comment .media-object .user-icon {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .tabs-content .comment .media-object{
+        margin-bottom: 20px;
+    }
+
+    .tabs-content .cell .action-icons li {
+        margin-right: 15px;
+    }
+
+    #card2 .host-img {
+        width: 200px;
+    }
+
+    .button.like {
+        padding: 9px;
+        width: 42px;
+    }
+
+    .filters .tabs-title a {
+        padding: 5px 13px;
 }
-
-/* Large devices (i.e. desktop) */
-@media (max-width: 1200px) {}
-
-/* X-Large devices (i.e. big desktop) */
-@media (max-width: 1800px) {}
